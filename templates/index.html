@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+<div class="container-fluid my-4 px-0">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/random/1600x400?travel,beach" class="d-block w-100" alt="no image">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/random/1600x400?travel,mountain" class="d-block w-100" alt="no image">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/random/1600x400?travel,ground" class="d-block w-100" alt="no image">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+{% comment %} <div class="album py-5 bg-dark">
+  <div class="container">
+
+    <div class="col">
+      <div class="row-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" data-src="https://source.unsplash.com/random/1600x400?travel" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Explore the world with like-minded adventurers. Join Travel Buddy Finder today and discover your next unforgettable journey!</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-info">Sign Up Now</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="album py-5 bg-dark">
+        <div class="container">
+      
+          <div class="col">
+            <div class="row-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="/static/1.jpg" alt="/static/1.jpg">
+                <div class="card-body">
+                  <p class="card-text">Explore the world with like-minded adventurers. Join Travel Buddy Finder today and discover your next unforgettable journey!</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-info">Sign Up Now</button>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+        <div class="container">{% endcomment %}
+
+          <div class="row" my-6 px-1>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="https://source.unsplash.com/random/400x400?travel,friends" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text">"At Travel Buddy, we're passionate about connecting explorers worldwide. Join our community to forge friendships and embark on extraordinary journeys together."</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" href="/about" class="btn btn-sm btn-outline-info">About Us</button>
+        
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="https://source.unsplash.com/random/400x400?travel,welcome" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text">Already a member? Please, Login!</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-info" href="/user/user_Login">Login</button>
+        
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="https://source.unsplash.com/random/400x400?travel,nature" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text">Explore the world with like-minded adventurers. Join Travel Buddy Finder today and discover your next unforgettable journey!</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" id="redirectButton" class="btn btn-sm btn-outline-info" href="/user/Register">Sign Up Now</button>
+        
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div> 
+        </div>
+{% endblock body %}
